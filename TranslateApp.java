@@ -21,6 +21,7 @@ public class TranslateApp{
 		System.out.println("Please enter the word you want to translate: ");
 		word=keyboard.nextLine();
 		myTranslate.setWord(word);
+		keyboard.close();
 
 
 		//Compute

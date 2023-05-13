@@ -21,6 +21,7 @@ public class TweetApp{
 		System.out.println("Please enter your sentence");
 		text=keyboard.nextLine();
 		myTweet.setText(text);
+		keyboard.close();
 
 
 		//Compute

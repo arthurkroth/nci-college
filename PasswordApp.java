@@ -20,6 +20,7 @@ public class PasswordApp{
 		System.out.println("Enter your password: ");
 		password=keyboard.nextLine();
 		myPassword.setPassword(password);
+		keyboard.close();
 
 
 		//Compute
