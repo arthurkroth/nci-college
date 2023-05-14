@@ -1,4 +1,3 @@
-import java.util.*;
 public class Hotel {
     //Data Members
     private String surname;

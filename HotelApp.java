@@ -38,6 +38,8 @@ public class HotelApp {
             String result = keyboard.nextLine();
             runAgain = result.equalsIgnoreCase("Y");
 
+            keyboard.close();
+
 
         } while (runAgain);
 
