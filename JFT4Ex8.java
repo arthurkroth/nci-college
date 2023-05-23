@@ -28,6 +28,8 @@ public class JFT4Ex8{
     System.out.println("The value of z is " + z); // 5
     System.out.println("The value of c is " + c); // 4
     System.out.println("The value of qq is " + qq); // 12
+
+    System.out.println((10+6)*3-6/2);
    
     }//method
    }//class
