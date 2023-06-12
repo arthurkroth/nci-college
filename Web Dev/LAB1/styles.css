@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(141, 233, 205);
+}
+.font1{
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+}
+.font2{
+    font-family: 'Pacifico', cursive;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+}
+#firstDiv {
+    background-color: yellow;
+}
+table, th, td{
+    border: 1px solid green;
+}
+.bold{
+    font-weight: 700;
+}
