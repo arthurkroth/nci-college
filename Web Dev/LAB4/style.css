@@ -1,0 +1,11 @@
+table{
+    border: 2px solid green;
+    text-align: center;
+}
+th, h1{
+    font-family: 'Pacifico', cursive;
+    font-family: 'Righteous', cursive;
+}
+.image{
+    height: 50px;
+}

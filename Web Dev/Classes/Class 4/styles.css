@@ -1,0 +1,9 @@
+body{
+    background-color: bisque;
+}
+table{
+    width: 50%;
+}
+td, th{
+    border: 3px solid green;
+}

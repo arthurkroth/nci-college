@@ -1,0 +1,89 @@
+body{
+    background-color: pink;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+}
+.wrapper{
+    width: 75%;
+    background-color: white;
+    margin: auto;
+    border-radius: 10px;
+}
+.main{
+    padding-left: 70px;
+    padding-bottom: 10px;
+}
+p{
+    margin-bottom: 2px;
+    color: rgb(9, 167, 9);
+}
+input[type=text]{
+    background-color: rgb(170, 183, 238);
+    width: 90%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    color: grey;
+    border-radius: 10px;
+    font-size: large;
+}
+input[type=password]{
+    background-color: rgb(170, 183, 238);
+    width: 90%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    color: grey;
+    border-radius: 10px;
+    font-size: large;
+}
+input[type=email]{
+    background-color: rgb(170, 183, 238);
+    width: 90%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    color: grey;
+    border-radius: 10px;
+    font-size: large;
+}
+textarea{
+    background-color:rgb(170, 183, 238);
+    border-radius: 10px;
+    width: 90%;
+    font-family: 'Courier New', Courier, monospace;
+    color: grey;
+    font-size: large;
+}
+select{
+    width: 90%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    color: black;
+    border-radius: 10px;
+    background-color: rgb(170, 183, 238);
+    font-size: large;
+}
+.myButton {
+	box-shadow:inset 0px 1px 0px 0px #9acc85;
+	background:linear-gradient(to bottom, #74ad5a 5%, #68a54b 100%);
+	background-color:#74ad5a;
+	border:1px solid #3b6e22;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:16px 16px;
+	text-decoration:none;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #68a54b 5%, #74ad5a 100%);
+	background-color:#68a54b;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+.inline{
+    display: inline;
+    padding-top: 10px;
+}

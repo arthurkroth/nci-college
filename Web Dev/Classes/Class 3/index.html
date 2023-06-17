@@ -3,24 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form</title>
 </head>
 <body>
-    <form action="">
+    <form method="get" action="mailto:kroth.sc@gmail.com">
+
+        <h1>Manage Subscription</h1>
+
         <label for="name">Name: </label>
-        <input type="text" id="name" placeholder="Enter your name here:"><br>
+        <input type="text" id="name" placeholder="Enter your name here:"><br><br>
 
         <label for="address">Address: </label>
-        <input type="text" id="address" size="50"><br>
+        <input type="text" id="address" size="50"><br><br>
 
         <label for="city">City: </label>
-        <input type="text" name="city" id="city" size="30"><br>
+        <input type="text" name="city" id="city" size="30"><br><br>
 
         <label for="state">State: </label>
-        <input type="text" id="state"><br>
+        <input type="text" id="state"><br><br>
 
         <label for="zip">Zip: </label>
-        <input type="text" id="zip"><br>
+        <input type="text" id="zip"><br><br>
 
         <span>Magazine:</span>
         <select name="Magazine" id="">
@@ -29,7 +32,7 @@
             <option value="OK">OK!</option>
             </optgroup>
         </select>
-        <br>
+        <br><br>
 
         <span>Subscription: </span>
         <input type="radio" name="one" id="one">
@@ -37,12 +40,12 @@
         <input type="radio" name="two" id="one">
         <label for="one">2 years</label>
 
-        <br>
+        <br><br>
         <span>Additional comments:</span>
         <textarea name="text" id="" cols="150" rows="10"></textarea>
 
-        <br>
-        <input type="button" value="Send your order ">
+        <br><br><br>
+        <input type="submit" value="Send your order ">
     </form>
 </body>
 </html>
