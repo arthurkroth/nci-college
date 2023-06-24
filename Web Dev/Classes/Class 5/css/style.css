@@ -1,0 +1,11 @@
+body, 
+.card-body {
+    background-color: rgb(190, 146, 231);
+}
+.test {
+    display: block;
+    margin: auto;
+}
+.card {
+    border: none;
+}
