@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lab 6</title>
+</head>
+<body>
+    <h1 id="myH1"></h1>
+
+    <form id="myForm">
+        <label>Enter your name:</label><br>
+        <input type="text" id="name" placeholder="Your name"><br>
+        <label>Enter the year you were born:</label><br>
+        <input type="text" id="year" placeholder="Year"><br>
+        <input type="button" value="Greet me!" onclick="doThis()">
+    </form>
+
+    <button id="myButton" class="hidden" onclick="location.reload()">Go back</button>
+
+    <script>
+        
+
+
+        function doThis() {
+            var nameInput = document.getElementById("name").value;
+            var yearInput = document.getElementById("year").value;
+            var age = 2023 - parseInt(yearInput);
+            
+            if (isNaN(yearInput)) {
+                alert("Not a valid year")
+            } else {
+                document.getElementById("myH1").innerHTML = "Hello " + nameInput + ", you are " + age + " years old!";
+                document.getElementById("myForm").classList.add("hidden");
+                document.getElementById("myButton").classList.remove("hidden");
+            }
+            
+        }
+    </script>
+</body>
+</html>

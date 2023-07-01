@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 3</title>
+</head>
+<body>
+    
+    <form>
+        <label for="">First Name</label>
+        <input type="text" id="firstName" placeholder="Name"/><br>
+        <label for="">Second Name</label>
+        <input type="text" id="secondName" placeholder="Surname"/><br>
+        <input type="button" value="Submit" onclick="doThis();">
+    </form>
+    <div id="myDiv">
+
+    </div>
+
+
+    <script>
+
+        function doThis() {
+            document.getElementById("myDiv").innerHTML = "<ol><li>" + firstName.value + "</li><li>" +  secondName.value + "</li></ol>";
+        }
+    </script>
+
+</body>
+</html>
