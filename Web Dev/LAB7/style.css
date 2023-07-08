@@ -1,0 +1,14 @@
+.btn1{
+    padding: 2px 20px 2px 20px;
+    margin-right: 20px;
+}
+body{
+    background-color: aqua;
+}
+.wrapper{
+    background-color: bisque;
+    text-align: center;
+    border-radius: 10px;
+    width: 60%;
+    margin: auto;
+}

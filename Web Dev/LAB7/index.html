@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JS calculator</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div>
+            <h1>JS Calculator</h1>
+        </div>
+        <table>
+            <label for="number1">First Number: </label>
+            <input type="text" placeholder="Number 1" id="num1"><br><br>
+            <label for="number2">Second Number: </label>
+            <input type="text" placeholder="Number 2" id="num2">
+        </div>
+        <hr>
+        <p>Choose operation</p>
+        <button class="btn1" onclick="doSum()">+</button>
+        <button class="btn1" onclick="doSub()">-</button>
+        <button class="btn1" onclick="doDiv()">/</button>
+        <button class="btn1" onclick="doMul()">*</button>
+        <hr>
+        <p>Result</p>
+        <h2 id="results">Enter two numbers and choose operation to show result here</h2>
+    </div>
+    <script>
+        function doSum(){
+            var num1 = document.getElementById("num1").value;
+            var num2 = document.getElementById("num2").value;
+            var result = 0;
+            if (isNaN(num1) || isNaN(num2)) {
+                document.getElementById("results").innerHTML = "Please enter valid numbers!";
+            } else {
+            result = parseFloat(num1) + parseFloat(num2);
+            document.getElementById("results").innerHTML = "The sum of " + num1 + " + " + num2 + " is " + result;
+            }
+        } 
+        function doSub(){
+            var num1 = document.getElementById("num1").value;
+            var num2 = document.getElementById("num2").value;
+            var result = 0;
+            if (isNaN(num1) || isNaN(num2)) {
+                document.getElementById("results").innerHTML = "Please enter valid numbers!";
+            } else {
+            result = parseFloat(num1) - parseFloat(num2);
+            document.getElementById("results").innerHTML = "The difference of " + num1 + " - " + num2 + " is " + result;
+            }
+        }
+        function doDiv(){
+            var num1 = document.getElementById("num1").value;
+            var num2 = document.getElementById("num2").value;
+            var result = 0;
+            if (isNaN(num1) || isNaN(num2)) {
+                document.getElementById("results").innerHTML = "Please enter valid numbers!";
+            } else {
+            result = parseFloat(num1) / parseFloat(num2);
+            document.getElementById("results").innerHTML = "The division of " + num1 + " / " + num2 + " is " + result;
+            }
+        }
+        function doMul(){
+            var num1 = document.getElementById("num1").value;
+            var num2 = document.getElementById("num2").value;
+            var result = 0;
+            if (isNaN(num1) || isNaN(num2)) {
+                document.getElementById("results").innerHTML = "Please enter valid numbers!";
+            } else {
+            result = parseFloat(num1) * parseFloat(num2);
+            document.getElementById("results").innerHTML = "The multiplication of " + num1 + " * " + num2 + " is " + result;
+            }
+
+        }   
+    </script>
+</body>
+</html>
