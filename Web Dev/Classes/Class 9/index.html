@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guessing game</title>
+  <!-- defer will ensure that any JS syntax will execute only after all HTML elements have created -->
+  <!-- this is so that any JS syntax will not attempt to create a reference (via DOM) to any elements which do not exist yet -->
+  <script defer src="game.js" charset="utf-8"></script>
+</head>
+
+<body>
+  <h1>Guess game</h1>
+  <!-- the main play area -->
+  <div id="playGame">
+    <h2>Guess a number between 1 and 10</h2>
+    <h4>You have 3 tries</h4>
+    <!-- this special input type will allow the user to use the spinner to choose the desired number -->
+    <input id="userInput" type="number" name="" value="1" min="1" max="10">
+    <button onclick="CheckNumber();" type="button" name="button">Guess</button>
+    <br><br>
+    <span>Number of tries: <span id="numberOfTries">0</span></span>
+    <h3 id="messageToUser"></h3>
+  </div>
+
+  <!-- this will display when the user guesses the number OR after three tries -->
+  <div id="restartGame">
+    <h3 id="message"></h3>
+    <!-- create two buttons that will allow the user to continue or stop playing the game-->
+    <button onclick="StartGame();" type="button" name="button">Yes</button>
+    <button onclick="GameOver();" type="button" name="button">No</button>
+  </div>
+
+  <!-- this will display only when the user chooses not to continue playing the game -->
+  <div id="gameOver">
+    <h3>Thanks for playing! See you again!</h3>
+  </div>
+
+</body>
+
+</html>
